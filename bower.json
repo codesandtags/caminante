@@ -10,9 +10,12 @@
     "bootstrap": {
       "main": [
         "dist/js/bootstrap.min.js",
-        "dist/css/bootstrap.min.css",
-        "dist/css/bootstrap.min.css.map",
-        "less/bootstrap.less"
+        "dist/css/bootstrap.min.css"
+      ]
+    },
+    "jquery": {
+      "main": [
+        "dist/jquery.min.js"
       ]
     }
   },

@@ -1,45 +1,69 @@
 <!doctype html>
 <html lang="en">
-  <head>
-      <base href="/">
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title ng-bind="pageTitle"></title>
-      <meta name="description" content="Caminante">
-      <meta name="viewport" content="width=device-width">
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title ng-bind="pageTitle"></title>
+    <meta name="description" content="Caminante">
+    <meta name="viewport" content="width=device-width">
 
-      <!-- bower:css -->
-      <!-- endbower -->
+    <!--bower:css-->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <!--endbower-->
 
-      <!-- main styles -->
-      <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-      <!-- <div ui-view></div> -->
+    <!-- main styles -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
 
-      <!--
-      <div id="map"></div>
-      <script type="text/javascript">
-          var map;
-          function initMap() {
-              map = new google.maps.Map(document.getElementById('map'), {
-                  center: {
-                      lat: 4.5958543,
-                      lng: -74.1642577
-                  },
-                  zoom: 10
-              });
-          }
-      </script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9hJJrGNQ06C65WgGhKQVHlqVTLC4bYe4&callback=initMap&language=es" async defer></script>
-      -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+<div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Caminante
+            <span class="logo-color glyphicon glyphicon glyphicon-heart" aria-hidden="true"></span>
+        </a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div><!--/.nav-collapse -->
+</div>
+</nav>
 
-      <h1>Hola k hace</h1>
 
-      <!-- bower:js -->
-      <!-- endbower -->
+<div class="container">
+    <div>
+        <h2>Knowing the world had never been easier. </h2>
+        <blockquote>“The world is a book and those who do not travel read only one page.” – St. Augustine</blockquote>
+    </div>
+    <form class="form-signin">
+        <h2 class="form-signin-heading">Please sign</h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+</div>
 
-      <!-- main scripts -->
-      <script src="js/main.js"></script>
-  </body>
+<!--bower:js-->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!--endbower-->
+
+<!-- main scripts -->
+<script src="js/main.js"></script>
+
+
+</body>
 </html>
