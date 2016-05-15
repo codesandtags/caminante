@@ -1,0 +1,20 @@
+{
+  "name": "angular2-quickstart",
+  "version": "1.0.0",
+  "description": "App for the contests angular 2.",
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "bootstrap": "^3.3.6"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.min.js",
+        "dist/css/bootstrap.min.css",
+        "dist/css/bootstrap.min.css.map",
+        "less/bootstrap.less"
+      ]
+    }
+  },
+  "appPath": "app"
+}
